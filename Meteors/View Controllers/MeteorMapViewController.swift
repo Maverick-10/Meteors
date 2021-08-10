@@ -85,7 +85,10 @@ extension MeteorMapViewController {
         let coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude,
                                                 longitude: location.coordinate.longitude);
         // Set Map region
-        let span = MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
+        let offset: Double = 0.2
+        let span = MKCoordinateSpan(latitudeDelta: mapView.region.span.latitudeDelta * offset,
+                                    longitudeDelta: mapView.region.span.longitudeDelta * offset)
+        print(mapView.region.span)
         let region = MKCoordinateRegion(center: coordinate, span: span)
         mapView.setRegion(region, animated: true)
         
