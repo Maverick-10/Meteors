@@ -99,9 +99,11 @@ class Meteor: Codable {
     }
 }
 
+// MARK: - Update Meteor List
 extension Meteor {
-    /// Find and update the selected meteor in the user defaults.
-    func updateSavedMeteorList() {
+    
+    /// Find and update the  meteor in the user defaults.
+    func saveAndUpdateUserDefaults() {
         // Update the meteor
         let savedMeteors = MeteorViewModel().getSavedMeteors()
         savedMeteors.forEach { loopMeteor in

@@ -88,26 +88,10 @@ class MeteorTableViewCell: UITableViewCell {
         // Update button image
         updateFavouriteButton()
         
-        // Updated the saved list in the user defaults
-        updateSavedMeteorList()
+        // Updated the meteor in the saved list in user defaults
+        meteor!.saveAndUpdateUserDefaults()
         
         // Reload table view cell to remove from the list
         delagate?.reload(cell: self)
-    }
-    
-    /// Find and update the selected meteor in the user defaults.
-    fileprivate func updateSavedMeteorList() {
-        // Update the meteor
-        let savedMeteors = MeteorViewModel().getSavedMeteors()
-        savedMeteors.forEach { loopMeteor in
-            if loopMeteor.id == meteor!.id {
-                loopMeteor.isFavourites = meteor!.isFavourites
-                return
-            }
-        }
-        
-        // Save the updated list
-        MeteorViewModel().save(meteors: savedMeteors)
-    }
-    
+    }    
 }

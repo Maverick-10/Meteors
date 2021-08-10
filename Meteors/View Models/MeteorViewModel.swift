@@ -107,11 +107,12 @@ extension MeteorViewModel {
     internal func fetchMeteors(completion: @escaping () -> Void) {
         
         // Create the meteor URL
-        let urlString = "https://data.nasa.gov/resource/y77d-th95.json"
-        let meteorListURL = URL(string: urlString)!
+        let meteorListURL = URL(string: "https://data.nasa.gov/resource/y77d-th95.json")!
+        var urlRequest = URLRequest(url: meteorListURL)
+        urlRequest.allHTTPHeaderFields = ["X-App-Token": "HlwJxWPhQkx0BXGF90m7z0nn3"]
         
         // Create data task
-        let dataTask = URLSession.shared.dataTask(with: meteorListURL) { data, response, error in
+        let dataTask = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
             // Parse the response and returns array of 'Meteor' type.
             guard
                 error == nil,

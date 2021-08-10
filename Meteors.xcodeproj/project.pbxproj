@@ -19,6 +19,7 @@
 		8407EEEB26BFCBF300819435 /* MeteorMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407EEEA26BFCBF300819435 /* MeteorMapViewController.swift */; };
 		8407EEED26BFCC4300819435 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407EEEC26BFCC4300819435 /* Storyboard.swift */; };
 		8407EEEF26BFEA5000819435 /* MeteorAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407EEEE26BFEA5000819435 /* MeteorAnnotationView.swift */; };
+		8496B36F26C2358500BFD56E /* RootNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B36E26C2358500BFD56E /* RootNavigationViewController.swift */; };
 		84AA0FF626BE318400588E28 /* MeteorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA0FF426BE318400588E28 /* MeteorTableViewCell.swift */; };
 		84AA0FF726BE318400588E28 /* MeteorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AA0FF526BE318400588E28 /* MeteorTableViewCell.xib */; };
 		84AA0FFA26BE35BC00588E28 /* UIView+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA0FF926BE35BC00588E28 /* UIView+Custom.swift */; };
@@ -44,6 +45,7 @@
 		8407EEEA26BFCBF300819435 /* MeteorMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorMapViewController.swift; sourceTree = "<group>"; };
 		8407EEEC26BFCC4300819435 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		8407EEEE26BFEA5000819435 /* MeteorAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorAnnotationView.swift; sourceTree = "<group>"; };
+		8496B36E26C2358500BFD56E /* RootNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationViewController.swift; sourceTree = "<group>"; };
 		84AA0FF426BE318400588E28 /* MeteorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteorTableViewCell.swift; sourceTree = "<group>"; };
 		84AA0FF526BE318400588E28 /* MeteorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeteorTableViewCell.xib; sourceTree = "<group>"; };
 		84AA0FF926BE35BC00588E28 /* UIView+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Custom.swift"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				84FA252926BE772700E4286F /* FilterMeteorViewController.swift */,
 				8407EEE826BFC91B00819435 /* LoaderViewController.swift */,
 				8407EEEA26BFCBF300819435 /* MeteorMapViewController.swift */,
+				8496B36E26C2358500BFD56E /* RootNavigationViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8402DC1B26C0E017002AEF35 /* FilterModel.swift in Sources */,
+				8496B36F26C2358500BFD56E /* RootNavigationViewController.swift in Sources */,
 				84FA252A26BE772700E4286F /* FilterMeteorViewController.swift in Sources */,
 				8403FE5726BD96D900FBBF4A /* MeteorListViewController.swift in Sources */,
 				8407EEE926BFC91B00819435 /* LoaderViewController.swift in Sources */,

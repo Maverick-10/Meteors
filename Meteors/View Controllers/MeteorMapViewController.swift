@@ -32,6 +32,9 @@ class MeteorMapViewController: UIViewController {
         
         // Update favourite button
         updateFavouriteButton()
+        
+        // Override light mode
+        overrideUserInterfaceStyle = .light
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -63,7 +66,7 @@ class MeteorMapViewController: UIViewController {
         updateFavouriteButton()
         
         // Updated the saved list in the user defaults
-        meteor.updateSavedMeteorList()
+        meteor.saveAndUpdateUserDefaults()
     }
 }
 

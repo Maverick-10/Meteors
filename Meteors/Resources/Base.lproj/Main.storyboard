@@ -618,7 +618,7 @@
         <!--Meteors-->
         <scene sceneID="x4P-pe-4D4">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9YF-vJ-RfX" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9YF-vJ-RfX" customClass="RootNavigationViewController" customModule="Meteors" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Meteors" image="list.dash" catalog="system" id="PgG-YZ-6zk"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="L4C-lm-8La">
