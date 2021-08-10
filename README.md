@@ -1,4 +1,4 @@
-# Meteorite Lannings
+# Meteorite Landings
 
 Meteorite Lanndings is a iOS project to show list of meteorites landing using NASA open data [API](https://data.nasa.gov/resource/y77d-th95.json)
 
